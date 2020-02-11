@@ -1,7 +1,7 @@
-package com.example.demo.service;
+package blog_app.service;
 
-import com.example.demo.domain.Post;
-import com.example.demo.repository.PostRepository;
+import blog_app.domain.Post;
+import blog_app.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

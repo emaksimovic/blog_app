@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package blog_app.controller;
 
 import com.example.demo.domain.Author;
 import com.example.demo.domain.Post;

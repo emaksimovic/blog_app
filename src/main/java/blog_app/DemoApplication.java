@@ -1,9 +1,9 @@
-package com.example.demo;
+package blog_app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication/*(scanBasePackages={"com.example.demo.controller"})*/
+@SpringBootApplication/*(scanBasePackages={"blog_app.controller"})*/
 public class DemoApplication {
 
 	public static void main(String[] args) {

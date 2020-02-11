@@ -1,6 +1,6 @@
-package com.example.demo.repository;
+package blog_app.repository;
 
-import com.example.demo.domain.Post;
+import blog_app.domain.Post;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
