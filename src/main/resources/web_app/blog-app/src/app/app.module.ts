@@ -10,6 +10,8 @@ import { SinglePostComponent } from './single-post/single-post.component';
 import { AuthComponent } from './auth/auth.component';
 import { HeaderComponent } from './header/header.component';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { CommentComponent } from './comment/comment.component';
+import { PostsComponent } from './posts/posts.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { DropdownDirective } from './shared/dropdown.directive';
     SinglePostComponent,
     AuthComponent,
     HeaderComponent,
-    DropdownDirective
+    DropdownDirective,
+    CommentComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,

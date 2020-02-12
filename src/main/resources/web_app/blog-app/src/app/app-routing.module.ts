@@ -5,6 +5,8 @@ import { SinglePostComponent } from './single-post/single-post.component';
 import { EnterTextComponent } from './enter-text/enter-text.component';
 import { AuthComponent } from './auth/auth.component';
 import { AuthorListComponent } from './author-list/author-list.component';
+import { CommentComponent } from './comment/comment.component';
+import { PostsComponent } from './posts/posts.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/posts', pathMatch: 'full' },
@@ -12,6 +14,11 @@ const routes: Routes = [
     path: 'posts',
     component: PostListComponent,
     children: [
+      { path: '', component: PostsComponent },
+      {
+        path: 'comment',
+        component: CommentComponent
+      },
       {
         path: ':id',
         component: SinglePostComponent
