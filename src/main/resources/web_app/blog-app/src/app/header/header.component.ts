@@ -7,9 +7,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  isAuthenticated = true /*false*/ ;
+  // private userSub: Subscription;
+
+  constructor(
+    /*private dataStorageService: DataStorageService,
+    private authService: AuthService,
+    private store: Store<fromApp.AppState>*/
+  ) {}
 
   ngOnInit() {
+    /*this.userSub = this.store
+      .select('auth')
+      .pipe(map(authState => authState.user))
+      .subscribe(user => {
+        this.isAuthenticated = !!user;
+        console.log(!user);
+        console.log(!!user);
+      });*/
+  }
+
+  onSaveData() {
+    //this.dataStorageService.storeRecipes();
+  }
+
+  onFetchData() {
+    //this.dataStorageService.fetchRecipes().subscribe();
+  }
+
+  onLogout() {
+    //this.authService.logout();
+  }
+
+  ngOnDestroy() {
+    //this.userSub.unsubscribe();
   }
 
 }

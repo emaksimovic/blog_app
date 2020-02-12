@@ -9,6 +9,7 @@ import { AuthorListComponent } from './author-list/author-list.component';
 import { SinglePostComponent } from './single-post/single-post.component';
 import { AuthComponent } from './auth/auth.component';
 import { HeaderComponent } from './header/header.component';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeaderComponent } from './header/header.component';
     AuthorListComponent,
     SinglePostComponent,
     AuthComponent,
-    HeaderComponent
+    HeaderComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
