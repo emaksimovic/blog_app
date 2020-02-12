@@ -8,6 +8,7 @@ import { PostListComponent } from './post-list/post-list.component';
 import { AuthorListComponent } from './author-list/author-list.component';
 import { SinglePostComponent } from './single-post/single-post.component';
 import { AuthComponent } from './auth/auth.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AuthComponent } from './auth/auth.component';
     PostListComponent,
     AuthorListComponent,
     SinglePostComponent,
-    AuthComponent
+    AuthComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
