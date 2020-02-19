@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-posts',
@@ -7,12 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private route: ActivatedRoute) {
+   }
 
   ngOnInit() {
   }
 
   onUpdate() {
+    this.router.navigate([':id/edit'], { relativeTo: this.route});
   }
 
   onDelete() {
