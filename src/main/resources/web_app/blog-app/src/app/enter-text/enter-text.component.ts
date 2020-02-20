@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-enter-text',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EnterTextComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  onDiscard() {
+    this.router.navigate(['/posts']);
+  }
+
+  onSave() {
   }
 
 }

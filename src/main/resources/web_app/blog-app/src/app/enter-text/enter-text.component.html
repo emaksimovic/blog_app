@@ -1,3 +1,27 @@
-<p>
-  enter-text works!
-</p>
+<div class="row">
+  <div class="col-md-8">
+    <article>
+      <label for="title">Title</label>
+      <input id="title"
+             type="text"
+             class="form-control">
+      <label for="body">Body text</label>
+      <textarea
+        type="text"
+        id="body"
+        class="form-control"
+        rows="6"></textarea>
+      <label for="author">Author name</label>
+      <input id="author"
+        type="text"
+        class="form-control">
+      <label for="author-img">Autor image</label>
+      <input id="author-img"
+             type="text"
+             class="form-control">
+      <p>
+        <button class="btn btn-primary" (click)="onSave()">Save</button>
+        <button class="btn btn-danger" (click)="onDiscard()">Discard</button>
+      </p>
+    </article>
+  </div>
